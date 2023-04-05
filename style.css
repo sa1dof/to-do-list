@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #0bbaff;
+  }
+  h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 8px;
+    color: rgba(222, 224, 143,778);
+  }
+  .container {
+    width: 90%;
+    max-width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  #new-task {
+    position: relative;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px -2px 7px 4px rgba(1, 24, 48, 0.15);
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1em;
+  }
+  #new-task input {
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    border: none;
+    border-bottom: 2px solid #d1d3d4;
+    padding: 10px 8px;
+    color: #111111;
+    font-weight: 500;
+  }
+
+  #new-task input:focus {
+    outline: none;
+    border-color: #0b87ff;
+  }
+  #new-task button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: #0bb2ff;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  #tasks {
+    position: relative;
+    padding: 32px 25px;
+    margin-top: 5px;
+    width: 100%;
+    box-shadow: 0 22px 30px rgba(1, 24, 48, 0.15);
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+  }
+  .task {
+    background-color: #ffffff;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    
+  }
+  .task span {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .task button {
+    color: #ffffff;
+    padding: 12px;
+    width: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .delete {
+    background-color: #fb3b3b;
+  
+  }
+  .edit {
+    background-color: #0b87ff;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  .completed {
+    text-decoration: line-through;
+  }
+  
+  
